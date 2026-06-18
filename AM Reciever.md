@@ -34,6 +34,9 @@ isolate 1000 AM.
 
 Before building the circuit, I simulated the design on LTspice. Observe:
 
+![LC Tank LTspice schematic](./LC%20Tank%20LTs%20schematic.png) ![LC Tank LTspice simulation](./LC%20Tank%20LTs%20simulation.png)
+
+This confirmed the LC tank circuit would use resonance to isolate 1000 kHz aka 1 MHz.
 
 
 
