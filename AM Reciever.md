@@ -46,7 +46,7 @@ I wanted to use an envelope detector to extract the high frequency carrier signa
 
 - To avoid increased ripple, I made the RC time constant much greater than the carrier period
 - To more accurately craft the envelope, I made the RC time constant much less than the message period (assumed < 5kHz)
-- i.e : ![LC Tank LTspice simulation](./LC%20Tank%20LTs%20simulation.png)
+-  ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
 
 
 
