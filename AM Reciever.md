@@ -46,8 +46,10 @@ I wanted to use an envelope detector to extract the high frequency carrier signa
 
 - To avoid increased ripple, I made the RC time constant much greater than the carrier period
 - To more accurately craft the envelope, I made the RC time constant much less than the message period (assumed < 5kHz)
--  ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
+- To optimize the envelope I used: ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
 
+I did not know how to use an analog discovery to send an ampltude modulated wave through the envelope detector circuit so I used LTspice to capture data on changing the value of the RC time constant.
+After using AI to generate a spice model for the 1N5819 Schottky diode, I ran a transient analysis for different resistances. Observe:  
 
 
 
