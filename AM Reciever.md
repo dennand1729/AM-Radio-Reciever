@@ -51,7 +51,7 @@ I wanted to use an envelope detector to extract the high frequency carrier signa
 I did not know how to use an analog discovery to send an ampltude modulated wave through the envelope detector circuit so I used LTspice to capture data on changing the value of the RC time constant.
 After using AI to generate a spice model for the 1N5819 Schottky diode, I ran a transient analysis for different resistances. Observe:  
 
-![Schematic of Envelope Detector](./Envelope_Detector_LTs.png) ![Excel Graph of Output vs Varying R](./Envelope%20Detector.png) 
+![Schematic of Envelope Detector](Envelope_Detector_LTs.png) ![Excel Graph of Output vs Varying R](./Envelope%20Detector.png) 
 
 
 
