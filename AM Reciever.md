@@ -46,12 +46,17 @@ I wanted to use an envelope detector to extract the high frequency carrier signa
 
 - To avoid increased ripple, I made the RC time constant much greater than the carrier period
 - To more accurately craft the envelope, I made the RC time constant much less than the message period (assumed < 5kHz)
-- To optimize the envelope I used: ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
 
 I did not know how to use an analog discovery to send an ampltude modulated wave through the envelope detector circuit so I used LTspice to capture data on changing the value of the RC time constant.
 After using AI to generate a spice model for the 1N5819 Schottky diode, I ran a transient analysis for different resistances. Observe:  
 
 ![Schematic of Envelope Detector](Envelope_Detector_LTs.png) ![Excel Graph of Output vs Varying R](./Envelope%20Detector.png) 
+
+Notice, the envelope of the non-modulated sinusidal input waveform should be a straight line. Hence, the 10k resistance created a discharge pattern which most accurately reflected the input's envelope.
+
+- Northwest News Radio operates on a carrier frequency of 1000 kHz
+- We assume a modulated frequency of 5kHz
+Hence, to optimize the envelope I used: ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
 
 
 
