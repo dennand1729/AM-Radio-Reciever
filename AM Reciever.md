@@ -58,7 +58,7 @@ Notice, the envelope of the non-modulated sinusidal input waveform should be a s
 - We assume a modulated frequency of 5kHz
 
 
-Hence, to optimize the envelope I used the standard inequality for creating a viable envelope detector:  
+Hence, to optimize the envelope I verified 10k as the correct selection by applying the standard inequality for creating a viable envelope detector:  
  ![LC Tank LTspice simulation](./Envelope_detector_Tau_Inequality.png)
 
 
