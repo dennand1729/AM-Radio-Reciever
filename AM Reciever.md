@@ -56,7 +56,10 @@ Notice, the envelope of the non-modulated sinusidal input waveform should be a s
 
 - Northwest News Radio operates on a carrier frequency of 1000 kHz
 - We assume a modulated frequency of 5kHz
-Hence, to optimize the envelope I used: ![LC Tank LTspice simulation](./Envelope%20Detector%20Time%20Constant%20conditioning.png)
+
+
+Hence, to optimize the envelope I used the standard inequality for creating a viable envelope detector:  
+ ![LC Tank LTspice simulation](./Envelope_detector_Tau_Inequality.png)
 
 
 
