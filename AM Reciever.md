@@ -63,7 +63,7 @@ Hence, to optimize the envelope I verified 10k as the correct selection by apply
 
 
  I then used the Analog Discovery Module and Waveforms software to send in a wave at carrier frequency and measure the response on the oscilliscope. Observe:
- ![Analog Discovery Scope Screenshot](Waveforms_Envelope_Detector_Scope.png)
+ ![Analog Discovery Scope Screenshot](./WaveForms_Envelope_Detector_Scope.png)
 
 
 
