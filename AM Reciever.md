@@ -62,5 +62,9 @@ Hence, to optimize the envelope I verified 10k as the correct selection by apply
  ![LC Tank LTspice simulation](./Envelope_detector_Tau_Inequality.png)
 
 
+ I then used the Analog Discovery Module to send in a carrier wave at carrier frequency and measure the response on the oscilliscope. Observe:
+ ![Analog Discovery Scope Screenshot]()
+
+
 
 
