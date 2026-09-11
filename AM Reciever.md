@@ -7,6 +7,9 @@
 - [Project Diary](#project-diary)  
     - [Designing an LC Tank Circuit](#Designing-an-LC-Tank-Circuit)
     - [Learning to Demodulate a Signal](#Learning-to-Demodulate-a-Signal)
+    - [Testing the Envelope Detector Using Analog Discovery](#Testing-the-Envelope-Detector-Using-Analog-Discovery)
+    - [Picking Up Real Broadcasts via Antennae](#Picking-Up-Real-Broadcasts-via-Antennae)
+    - [Using an IC to Amplify and Drive a Speaker](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
 
 
 ## Summary
@@ -73,13 +76,19 @@ $$ \implies 1 \mu s << 10 \mu s << 200 \mu s$$
 
 In the screenshot of the oscilloscope above, channel 1 depicted the 1MHz wave being sent in to the circuit, and channel 2 represented the output of the cascaded LC tank circuit and envelope detector. This inspred confidence as the demodulated envelope was a straight line as predicted by the Excel plot of the LTspice simulation.
 
-### July 1 2026
+
+    - [](#Testing-the-Envelope-Detector-Using-Analog-Discovery)
+    - [](#Picking-Up-Real-Broadcasts-via-Antennae)
+    - [](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
+### Testing the Envelope Detector Using Analog Discovery
 
 [talk about finding out how to use the modulation function of waveforms]
 
-### July 13 2026
+### Picking Up Real Broadcasts via Antennae
 
 [talk about finding an antennae and problems that arose
+
+### Using an IC to Amplify and Drive a Speaker
 
 
 
