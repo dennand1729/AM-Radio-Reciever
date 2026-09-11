@@ -5,7 +5,7 @@
 - [Summary](#summary)
 - [Design Specifications](#design-specifications)
 - [Project Diary](#project-diary)  
-    - [June 12 2026](#June-12-2026)
+    - [June 12 2026 Designing an LC Tank Circuit](#June-12-2026-Designing-an-LC-Tank-Circuit)
     - [June 17 2026](#June-17-2026)
 
 
@@ -27,7 +27,7 @@ By integrating theory with hands-on implementation, this project has strengthene
 
 ## Project Diary
 
-### June 12 2026
+### June 12 2026 || Designing an LC Tank Circuit
 
 I aimed to pick up and demodulate waves transmitted by KNWN Northwest News Radio aka 1000 AM channel. The transmitter is on Vashon Island but is relatively powerful making it an ideal canidate for the project. 
 
@@ -45,11 +45,11 @@ I verified using the Analog Discovery's Network Analyzer feature that the LC cir
 [insert pic of the network analyzer screen on waveforms and the breadboard setu...p..]
 ### June 17 2026
 
-The next step was using an envelope detector to extract the high frequency carrier signal component from the output of the tank circuit leaving the end-user with a clean, demodulated message signal
+The next step was using an envelope detector to extract the high frequency carrier signal component from the output of the tank circuit, ultimately, leaving the end-user with a clean, demodulated message signal.
 
 - To avoid increased ripple, I made the RC time constant much greater than the carrier period. This made it so that the demodulation did not follow the high frequency cycle of the carrier wave which would introduce unwanted ripple into the output waveform.
 
-- To more accurately craft the envelope, I made the RC time constant much less than the message period (assumed < 5kHz). This means the output wabeform would follow changes in the envelope of the modulated signal-- failing to follow this constraint would result in the capacitor in the detector discharging too slowly and diagnoally clipping the silhouette of the modulated message.
+- To more accurately craft the envelope, I made the RC time constant much less than the message period (assumed < 5kHz). This means the output waveform would follow changes in the envelope of the modulated signal-- failing to follow this constraint would result in the detector's capacitor discharging too slowly and diagnoally clipping the silhouette of the modulated message.
 
 I did not know how to use an Analog Discovery to send an ampltude modulated wave through the envelope detector circuit so I used LTspice to capture data on changing the value of the RC time constant.
 
@@ -57,7 +57,7 @@ After using GPT AI to generate an appropriate spice model for the 1N5819 Schottk
 
 ![Schematic of Envelope Detector](Envelope_Detector_LTs.png) ![Excel Graph of Output vs Varying R](./Envelope%20Detector.png) 
 
-Notice, the envelope of the non-modulated sinusidal input waveform should be a straight line. Hence, the 10k resistance created a discharge pattern which most accurately reflected the input's envelope.
+Recall, the envelope of the non-modulated sinusidal input waveform should be a straight line. Hence, the 10k resistance created a discharge pattern which most accurately reflected the input's envelope.
 
 Based on the simulated results above, I verified the validity of the standard criterion for a well conditioned envelope detector time constant using the R and C values I selected for the sub-circuit:
 
@@ -69,6 +69,8 @@ $$ \implies 1 \mu s << 10 \mu s << 200 \mu s$$
 
  I then used the Analog Discovery Module and Waveforms software to send in a nonmodulated wave at carrier frequency and measure the response on the oscilliscope. Observe:
  ![Analog Discovery Scope Screenshot](./WaveForms_Envelope_Detector_Scope.png)
+
+In the screenshot of the oscilloscope above, channel 1 depicted the 1MHz wave being sent in to the circuit, and channel 2 represented the output of the cascaded LC tank circuit and envelope detector. This inspred confidence as the demodulated envelope was a straight line as predicted by the Excel plot of the LTspice simulation.
 
 ### July 1 2026
 
