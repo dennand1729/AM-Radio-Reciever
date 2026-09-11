@@ -81,6 +81,14 @@ In the screenshot of the oscilloscope above, channel 1 depicted the 1MHz wave be
 Realizing there would be multiple more hurdles to jump through, I realized I could not continue to build upon the system I had before testing if it could demodulate an AM signal. I researched the Analog Discovery's
 features and found that an inputted signal could be modulated. Hence, success would mean measuring an output that could take a 2kHz wave modulated at 1MHz and filter out the high-frequency carrier. To my delight, I found that the envelope detector produced the expected output:
 
+<div>
+  <img src="Envelope_Detector_Demodulation.png" width="750">
+  <img src="cascaded_system_p1.jpg" width="250">
+</div>
+
+This phase marked a turning point in the project. After being unsure if the envelope detector was working properly (due to not being able to test with a modulated input waveform), I felt reinvigorated seeing the cursors on the scope display a period that matched the 2 kHz input before pre-modulation. 
+
+I was also proud to have gained familiarity with using amplitude modulation in the waveform generator along with learning to use different modes of the scope and its cursors for measurement. I knew these would be valuable skills for troubleshooting and testing circuits in the furture.
 
 ### Picking Up Real Broadcasts via Antennae
 
