@@ -6,7 +6,7 @@
 - [Design Specifications](#design-specifications)
 - [Project Diary](#project-diary)  
     - [Designing an LC Tank Circuit](#Designing-an-LC-Tank-Circuit)
-    - [June 17 2026](#June-17-2026)
+    - [Learning to Demodulate a Signal](#Learning-to-Demodulate-a-Signal)
 
 
 ## Summary
@@ -43,7 +43,8 @@ $$f_0 \text{(in Hertz)}= \displaystyle \frac{1}{2 \pi \cdot \sqrt{LC}} = \displa
 
 I verified using the Analog Discovery's Network Analyzer feature that the LC circuit was working as intended at 1000 kHz.
 [insert pic of the network analyzer screen on waveforms and the breadboard setu...p..]
-### June 17 2026
+
+### Learning to Demodulate a Signal
 
 The next step was using an envelope detector to extract the high frequency carrier signal component from the output of the tank circuit, ultimately, leaving the end-user with a clean, demodulated message signal.
 
