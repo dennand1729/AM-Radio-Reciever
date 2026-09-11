@@ -5,7 +5,7 @@
 - [Summary](#summary)
 - [Design Specifications](#design-specifications)
 - [Project Diary](#project-diary)  
-    - [June 12 2026 Designing an LC Tank Circuit](#June-12-2026-Designing-an-LC-Tank-Circuit)
+    - [June 12 2026 || Designing an LC Tank Circuit](#June-12-2026-||-Designing-an-LC-Tank-Circuit)
     - [June 17 2026](#June-17-2026)
 
 
@@ -27,7 +27,7 @@ By integrating theory with hands-on implementation, this project has strengthene
 
 ## Project Diary
 
-### June 12 2026 Designing an LC Tank Circuit
+### June 12 2026 || Designing an LC Tank Circuit
 
 I aimed to pick up and demodulate waves transmitted by KNWN Northwest News Radio aka 1000 AM channel. The transmitter is on Vashon Island but is relatively powerful making it an ideal canidate for the project. 
 
