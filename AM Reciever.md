@@ -76,13 +76,11 @@ $$ \implies 1 \mu s << 10 \mu s << 200 \mu s$$
 
 In the screenshot of the oscilloscope above, channel 1 depicted the 1MHz wave being sent in to the circuit, and channel 2 represented the output of the cascaded LC tank circuit and envelope detector. This inspred confidence as the demodulated envelope was a straight line as predicted by the Excel plot of the LTspice simulation.
 
-
-    - [](#Testing-the-Envelope-Detector-Using-Analog-Discovery)
-    - [](#Picking-Up-Real-Broadcasts-via-Antennae)
-    - [](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
 ### Testing the Envelope Detector Using Analog Discovery
 
-[talk about finding out how to use the modulation function of waveforms]
+Realizing there would be multiple more hurdles to jump through, I realized I could not continue to build upon the system I had before testing if it could demodulate an AM signal. I researched the Analog Discovery's
+features and found that an inputted signal could be modulated. Hence, success would mean measuring an output that could take a 2kHz wave modulated at 1MHz and filter out the high-frequency carrier. To my delight, I found that the envelope detector produced the expected output:
+
 
 ### Picking Up Real Broadcasts via Antennae
 
