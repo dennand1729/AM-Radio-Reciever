@@ -32,7 +32,7 @@ By integrating theory with hands-on implementation, this project has strengthene
 
 ## Project Diary
 
-### Designing an LC Tank Circuit
+## Designing an LC Tank Circuit
 
 I aimed to pick up and demodulate waves transmitted by KNWN Northwest News Radio aka 1000 AM channel. The transmitter is on Vashon Island but is relatively powerful making it an ideal canidate for the project. 
 
@@ -49,7 +49,7 @@ $$f_0 \text{(in Hertz)}= \displaystyle \frac{1}{2 \pi \cdot \sqrt{LC}} = \displa
 I verified using the Analog Discovery's Network Analyzer feature that the LC circuit was working as intended at 1000 kHz.
 [insert pic of the network analyzer screen on waveforms and the breadboard setu...p..]
 
-### Learning to Demodulate a Signal
+## Learning to Demodulate a Signal
 
 The next step was using an envelope detector to extract the high frequency carrier signal component from the output of the tank circuit, ultimately, leaving the end-user with a clean, demodulated message signal.
 
@@ -78,7 +78,7 @@ $$ \implies 1 \mu s << 10 \mu s << 200 \mu s$$
 
 In the screenshot of the oscilloscope above, channel 1 depicted the 1MHz wave being sent in to the circuit, and channel 2 represented the output of the cascaded LC tank circuit and envelope detector. This inspred confidence as the demodulated envelope was a straight line as predicted by the Excel plot of the LTspice simulation.
 
-### Testing the Envelope Detector Using Analog Discovery
+## Testing the Envelope Detector Using Analog Discovery
 
 Realizing there would be multiple more hurdles to jump through, I realized I could not continue to build upon the system I had before testing if it could demodulate an AM signal. I researched the Analog Discovery's
 features and found that an inputted signal could be modulated. Hence, success would mean measuring an output that could take a 2kHz wave modulated at 1MHz and filter out the high-frequency carrier. To my delight, I found that the envelope detector produced the expected output:
@@ -92,9 +92,17 @@ This phase marked a turning point in the project. After being unsure if the enve
 
 I was also proud to have gained familiarity with using amplitude modulation in the waveform generator along with learning to use different modes of the scope and its cursors for measurement. I knew these would be valuable skills for troubleshooting and testing circuits in the furture.
 
-### Picking Up Real Broadcasts via Antennae
+## Picking Up Real Broadcasts via Antennae
 
-[talk about finding an antennae and problems that arose
+Finally, it was time to begin picking signals up out of the air. I did not know much about how to do this and thought back to the radio/alarm-clock I had as a kid. I remember a simple wire antennae being able to pick up signals all across the FM and AM bands. 
+
+I proceeded to use the only wire I had on hand-- soldering wire-- and hooked one side of an ~8ft segment to the head of the LC tank and the other side to ground. When I tested the signal at the output of the envelope detector I saw a flatline. I knew this indicated a problem and upon doing some research on the internet I realized that the soldering wire (which likely contained some sort of tin alloy) was far less conductive than copper wire. I proceeded to find 22 AWG solid copper wire and was still getting an almost negligible signal. 
+
+After consulting with AI, I tried two things. I changed the scope's axis to pick up smaller signals; after doing this, I could see the electromagnetic noise the antennae was picking up but no clear signal. The second thing I tried was establishing counterpoised ground. The Analog Discovery draws power from my laptop. The laptop, even when plugged in, is not connected to earth ground as it has a 2 prong plug! T
+
+
+## Developing an Amplification Stage Using Modular Design
+
 
 ### Using an IC to Amplify and Drive a Speaker
 
