@@ -9,7 +9,9 @@
     - [Learning to Demodulate a Signal](#Learning-to-Demodulate-a-Signal)
     - [Testing the Envelope Detector Using Analog Discovery](#Testing-the-Envelope-Detector-Using-Analog-Discovery)
     - [Picking Up Real Broadcasts via Antennae](#Picking-Up-Real-Broadcasts-via-Antennae)
-    - [Using an IC to Amplify and Drive a Speaker](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
+    - [Developing an Amplification Stage Using Modular Design](#Developing-an-Amplification-Stage-Using-Modular-Design)
+        - [Using an IC to Amplify and Drive a Speaker](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
+        - [Creating a Cascaded Amplifier Using NMOS](#Creating-a-Cascaded-Amplifier-Using-NMOS)
 
 
 ## Summary
@@ -95,6 +97,8 @@ I was also proud to have gained familiarity with using amplitude modulation in t
 [talk about finding an antennae and problems that arose
 
 ### Using an IC to Amplify and Drive a Speaker
+
+### Creating a Cascaded Amplifier Using NMOS
 
 
 
