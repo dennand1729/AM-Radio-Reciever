@@ -100,12 +100,13 @@ I proceeded to use the only wire I had on hand-- soldering wire-- and hooked one
 
 After consulting with AI, I tried two things. I changed the scope's axis to pick up smaller signals; after doing this, I could see the electromagnetic noise the antennae was picking up but no clear signal. The second thing I tried was establishing counterpoised ground. The Analog Discovery draws power from my laptop. The laptop, even when plugged in, is not connected to earth ground as it has a 2 prong plug! The solution was using a the spool of wire I had to create a ground plane by connecting the GND power rail to the spool and placing it across the room on the floor. 
 
-Below are pictures of the antennae and the counterposed ground used:
+Below are pictures of the antennae and the counterpoised ground used:
 
-<div>
-  <img src="" width="750">
-  <img src="" width="250">
-</div>
+<p align="center">
+  <img src="antennae.jpg" width="300">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="corrigated_cat.jpg" width="300">
+</p>
 
 From this portion of the project I learned that since the radio station is being transmitted with respect to earth ground, the radio receiver needed to pick up 1000 kHz with respect to earth ground as well to properly recieve the signal. One method to create this reference on the recieving side if no direct access to ground is available is to create a counterpoised ground to function as a 0 volt ground plane reference.
 
