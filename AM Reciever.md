@@ -110,6 +110,12 @@ Below are pictures of the antennae and the counterpoised ground used:
 
 From this portion of the project I learned that since the radio station is being transmitted with respect to earth ground, the radio receiver needed to pick up 1000 kHz with respect to earth ground as well to properly recieve the signal. One method to create this reference on the recieving side if no direct access to ground is available is to create a counterpoised ground to function as a 0 volt ground plane reference.
 
+The result of driving the tank and envelope detector with the correct antennae was:
+
+<p align="center">
+  <img src="Scope_Shot_1000kHz.gif" width="500">
+</p>
+
 
 ## Developing an Amplification Stage Using Modular Design
 
