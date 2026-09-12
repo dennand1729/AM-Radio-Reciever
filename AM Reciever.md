@@ -24,7 +24,7 @@ By integrating theory with hands-on implementation, this project has strengthene
 
 ## Design Specifications
 
-- Wire Antennae
+- 22 AWG solid wire
 - LC Tank Circuit
 - Envelope Detector
 - Low Pass Filter
@@ -96,9 +96,18 @@ I was also proud to have gained familiarity with using amplitude modulation in t
 
 Finally, it was time to begin picking signals up out of the air. I did not know much about how to do this and thought back to the radio/alarm-clock I had as a kid. I remember a simple wire antennae being able to pick up signals all across the FM and AM bands. 
 
-I proceeded to use the only wire I had on hand-- soldering wire-- and hooked one side of an ~8ft segment to the head of the LC tank and the other side to ground. When I tested the signal at the output of the envelope detector I saw a flatline. I knew this indicated a problem and upon doing some research on the internet I realized that the soldering wire (which likely contained some sort of tin alloy) was far less conductive than copper wire. I proceeded to find 22 AWG solid copper wire and was still getting an almost negligible signal. 
+I proceeded to use the only wire I had on hand-- soldering wire-- and hooked one side of an ~8ft segment to the head of the LC tank and the other side to ground. When I tested the signal at the output of the envelope detector I saw a flatline. I knew this indicated a problem and upon doing some research on the internet I realized that the soldering wire (which likely contained some sort of tin alloy) was far less conductive than copper wire. I proceeded to find 22 AWG solid copper wire and hook it up similarly and was still getting an almost negligible signal. 
 
-After consulting with AI, I tried two things. I changed the scope's axis to pick up smaller signals; after doing this, I could see the electromagnetic noise the antennae was picking up but no clear signal. The second thing I tried was establishing counterpoised ground. The Analog Discovery draws power from my laptop. The laptop, even when plugged in, is not connected to earth ground as it has a 2 prong plug! T
+After consulting with AI, I tried two things. I changed the scope's axis to pick up smaller signals; after doing this, I could see the electromagnetic noise the antennae was picking up but no clear signal. The second thing I tried was establishing counterpoised ground. The Analog Discovery draws power from my laptop. The laptop, even when plugged in, is not connected to earth ground as it has a 2 prong plug! The solution was using a the spool of wire I had to create a ground plane by connecting the GND power rail to the spool and placing it across the room on the floor. 
+
+Below are pictures of the antennae and the counterposed ground used:
+
+<div>
+  <img src="" width="750">
+  <img src="" width="250">
+</div>
+
+From this portion of the project I learned that since the radio station is being transmitted with respect to earth ground, the radio receiver needed to pick up 1000 kHz with respect to earth ground as well to properly recieve the signal. One method to create this reference on the recieving side if no direct access to ground is available is to create a counterpoised ground to function as a 0 volt ground plane reference.
 
 
 ## Developing an Amplification Stage Using Modular Design
