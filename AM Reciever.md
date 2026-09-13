@@ -148,6 +148,8 @@ To test the output of the speaker I used the Analog Discovery to input a 200 Hz,
   </tr>
 </table>
 
+Though the speaker sub-circuit using the LM386 was a success, problems became apparent upon connecting it to the main-receiver circuit and antennae. Though I was excited by how I could hear voices, I found the audio very quiet so I decided to use NMOS transistors to build cascaded amplifiers to amplify the output of the LM386 before driving the speaker.
+
 ### Creating a Cascaded Amplifier Using NMOS
 
 
