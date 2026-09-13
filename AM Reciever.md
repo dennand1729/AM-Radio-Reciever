@@ -141,7 +141,7 @@ To test the output of the speaker I used the Analog Discovery to input a 200 Hz,
       <sub>▶ Demo of audio test </sub>
     </td>
     <td align="center">
-      <img src="LM386_amplifier_speaker.jpg" width="300">
+      <img src="LM386_amplifier_speaker_circuit.jpg" width="300">
       <br>
       <sub>Project hardware</sub>
     </td>
