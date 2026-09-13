@@ -134,14 +134,14 @@ To test the output of the speaker I used the Analog Discovery to input a 200 Hz,
 <table align="center">
   <tr>
     <td align="center">
-      <a href="LM386%20Test.mp4">
-        <img src="video-thumbnail.jpg" width="300">
+      <a href="https://www.youtube.com/watch?v=VbPqR3rHAqM">
+        <img src="https://img.youtube.com/vi/VbPqR3rHAqM/maxresdefault.jpg" width="750">
       </a>
       <br>
-      <sub>▶ Demo of audio test </sub>
+      <sub>▶ Watch the demonstration</sub>
     </td>
     <td align="center">
-      <img src="LM386_amplifier_speaker_circuit.jpg" width="300">
+      <img src="LM386_amplifier_speaker_circuit.jpg" width="350">
       <br>
       <sub>Project hardware</sub>
     </td>
