@@ -131,6 +131,22 @@ I proceeded to use LM386 to drive a $16 \Omega$ speaker. I used a popular, low-v
 
 To test the output of the speaker I used the Analog Discovery to input a 200 Hz, 10mV wave. The speaker working meant I'd hear both a tone and the oscilliscope output should be amplified to close to $.2 V$. Here is what I found:
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="LM386%20Test.mp4">
+        <img src="video-thumbnail.jpg" width="300">
+      </a>
+      <br>
+      <sub>▶ Demo of audio test </sub>
+    </td>
+    <td align="center">
+      <img src="LM386_amplifier_speaker.jpg" width="300">
+      <br>
+      <sub>Project hardware</sub>
+    </td>
+  </tr>
+</table>
 
 ### Creating a Cascaded Amplifier Using NMOS
 
