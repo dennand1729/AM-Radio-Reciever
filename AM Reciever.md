@@ -119,8 +119,13 @@ With no power being inserted into the circuit besides the waves picked up by the
 
 ## Developing an Amplification Stage Using Modular Design
 
+After seeing the receiver pick up transmitted waves, the natural next step was converting these electrical signals into audible sound. I measured the peak to peak voltage of these waveforms to be approximately 5 mV which meant an amplification stage was needed in order to practically hear what was being captured and demodulated. 
+
+I decided that this portion of the project could be done more modularly as stacking all layers of the circuit together and testing them in conjunction at once could overcomplicate testing.
 
 ### Using an IC to Amplify and Drive a Speaker
+
+I proceeded to use LM386 to drive a $16 \Omega$ speaker. I used a popular, low-voltage amplifier design to build the amplifier out of the IC.
 
 ### Creating a Cascaded Amplifier Using NMOS
 
