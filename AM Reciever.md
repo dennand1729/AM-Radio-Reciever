@@ -125,7 +125,12 @@ I decided that this portion of the project could be done more modularly as stack
 
 ### Using an IC to Amplify and Drive a Speaker
 
-I proceeded to use LM386 to drive a $16 \Omega$ speaker. I used a popular, low-voltage amplifier design to build the amplifier out of the IC.
+I proceeded to use LM386 to drive a $16 \Omega$ speaker. I used a popular, low-voltage amplifier design to build the amplifier out of the IC as shown below:
+
+![LM386 Schematic](./LM386%20schematic.png)
+
+To test the output of the speaker I used the Analog Discovery to input a 200 Hz, 10mV wave. The speaker working meant I'd hear both a tone and the oscilliscope output should be amplified to close to $.2 V$. Here is what I found:
+
 
 ### Creating a Cascaded Amplifier Using NMOS
 
