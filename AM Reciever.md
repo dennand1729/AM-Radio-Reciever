@@ -152,5 +152,15 @@ Though the speaker sub-circuit using the LM386 was a success, problems became ap
 
 ### Creating a Cascaded Amplifier Using NMOS
 
+I began by recreating an amplifier design using 2N7000 FET and a schematic I obtained from my semiconductors coursework. I wanted to connect two amplifiers in series and modeled the output on LTspice. 
 
+\\include pics of spice amplifiers here
+
+After building the circuit seperately, I ran into problems with clipping occuring when the two were connected in series. After exploring the problem, discovering an error involving ground-loops, and tinkering with the DC operating point of the initial drain, I decided that the cascade was overkill and the amplification from implmenting one amplifier would serve well.
+
+<p align="center">
+  <img src="antennae.jpg" width="300">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="corrigated_cat.jpg" width="300">
+</p>
 
