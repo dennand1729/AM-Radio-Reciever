@@ -154,7 +154,13 @@ Though the speaker sub-circuit using the LM386 was a success, problems became ap
 
 I began by recreating an amplifier design using 2N7000 FET and a schematic I obtained from my semiconductors coursework. I wanted to connect two amplifiers in series and modeled the output on LTspice. 
 
-\\include pics of spice amplifiers here
+<p align="center">
+  <img src="amplifier_schematic.png" width="300">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="cascaded_system_p1.jpg" width="300">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="cascade_output.png" width="300">
+</p>
 
 After building the circuit seperately, I ran into problems with clipping occuring when the two were connected in series. After exploring the problem, discovering an error involving ground-loops, and tinkering with the DC operating point of the initial drain, I decided that the cascade was overkill and the amplification from implmenting one amplifier would serve well.
 
