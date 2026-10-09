@@ -12,6 +12,9 @@
     - [Developing an Amplification Stage Using Modular Design](#Developing-an-Amplification-Stage-Using-Modular-Design)
         - [Using an IC to Amplify and Drive a Speaker](#Using-an-IC-to-Amplify-and-Drive-a-Speaker)
         - [Creating a Cascaded Amplifier Using NMOS](#Creating-a-Cascaded-Amplifier-Using-NMOS)
+    - [Audibly Receiving 1 MHz Waves Out of the Air](#Audibly-Receiving-1-MHz-Waves-Out-of-the-Air)
+     
+
 
 
 ## Summary
@@ -170,3 +173,4 @@ After building the cascaded amplifier circuit separately, I ran into problems wi
   <img src="NMOS_AMP_SCOPED.png" width="800">
 </p>
 
+###  Audibly Receiving 1 MHz Waves Out of the Air 
