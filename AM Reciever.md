@@ -1,4 +1,4 @@
-# AM Radio Reciever (In Progress)  
+# AM Radio Reciever
 
 ## Table of Contents
 
@@ -157,16 +157,16 @@ I began by recreating an amplifier design using 2N7000 FET and a schematic I obt
 <p align="center">
   <img src="amplifier_schematic.png" width="300">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="cascaded_system_p1.jpg" width="300">
+  <img src="Amplifier_Breadboard.jpg" width="300">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="cascade_output.png" width="300">
 </p>
 
-After building the circuit seperately, I ran into problems with clipping occuring when the two were connected in series. After exploring the problem, discovering an error involving ground-loops, and tinkering with the DC operating point of the initial drain, I decided that the cascade was overkill and the amplification from implmenting one amplifier would serve well.
+After building the cascaded amplifier circuit separately, I ran into problems with clipping and distortion of the signals occurring. I explored the problem, discovered an error involving ground-loops which did boost the quality of the sound. After some time tinkering with the DC operating point of the initial drain, I decided that the cascade was out of reach until I could go back to the lab and take semiconductors II which focused on configuring cascaded amplifiers correctly.
 
 <p align="center">
-  <img src="antennae.jpg" width="300">
+  <img src="cascade_design.png" width="800">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="corrigated_cat.jpg" width="300">
+  <img src="NMOS_AMP_SCOPED.png" width="800">
 </p>
 
