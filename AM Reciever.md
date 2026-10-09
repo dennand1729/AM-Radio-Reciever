@@ -174,3 +174,7 @@ After building the cascaded amplifier circuit separately, I ran into problems wi
 </p>
 
 ###  Audibly Receiving 1 MHz Waves Out of the Air 
+
+When I connected the output of the envelope detector to the single NMOS amplifier, I then tied it back to the LM386 IC which drove a speaker. The result was hearing audible voicestransmitted from a transceiver on 1000MHz from Vashon Island! The voices were quieter than I expected but loud enough to be understandable. I suspected this had to do with the quality of the speaker and likely some unsolved issues with the amplfication stage.
+
+Overall, this project taught me so much about prototyping electronics. I used new tools such as a spectrum analyzer and an Analog Discovery. I implemented concepts from my classes such as biasing transistors into the active region of operation and filter simulation. It was really satisfying to see the work I did over the summer turn electromagnetic waves into something so human and soothing-- I feel ready to continue my coursework and study cascaded amplifiers to grow the project even further now.
